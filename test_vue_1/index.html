@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="assets/js/vue.min.js"></script>
+  </head>
+  <body>
+
+    <div class="nav-bar"></div>
+    
+    <div id="app">
+      <div class="cart">
+        <p>Cart( {{ cart.length }} )</p>
+      </div>
+      <product :premium="premium" @add-to-cart="updateCart"></product>
+    </div>
+
+    <!-- Import Js -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
